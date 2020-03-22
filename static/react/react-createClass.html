@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>React createClass</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<div id="app"></div>
+		<script type="text/javascript" src="https://unpkg.com/react@15.0.0/dist/react.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/react-dom@15.0.0/dist/react-dom.js"></script>
+		<script type="text/javascript">
+			const list = React.createElement('ul',{clasName:'list'},
+						React.createElement('li',{key:1},'item 1'),
+						React.createElement('li',{key:2},'item 2'),
+						[React.createElement('li',{key:3},'item 3'),
+						React.createElement('li',{key:4},'item 4')]
+					);
+			const List = React.createClass({
+				displayName: 'List',
+				render() {
+					return list;
+				}
+			});
+			const app = React.createElement(List, {id:'list'}, null);
+			ReactDOM.render(app, document.getElementById('app'));
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "just for test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anightrabbit/test.git"
+  },
+  "keywords": [
+    "nodejs",
+    "reactjs",
+    "vuejs",
+    "javascript"
+  ],
+  "author": "anightrabbit@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anightrabbit/test/issues"
+  },
+  "homepage": "https://github.com/anightrabbit/test#readme",
+  "devDependencies": {
+    "connect": "^3.7.0",
+    "serve-static": "^1.14.1"
+  }
+}
